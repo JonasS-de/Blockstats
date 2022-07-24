@@ -1,0 +1,14 @@
+name: Blockstats
+version: ${project.version}
+main: de.knork31.blockstats.Main
+api-version: 1.19
+authors: [ Knork31 ]
+description: Dysplays block preperties
+website: Knork31.de
+commands:
+  blockstats:
+    aliases: bstat
+    description: outputs stats of a block
+  consolelog:
+    aliases: clog
+    description: logs string to console.
