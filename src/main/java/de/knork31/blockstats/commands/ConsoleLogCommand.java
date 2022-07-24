@@ -1,6 +1,7 @@
 package de.knork31.blockstats.commands;
 
 import de.knork31.blockstats.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,6 +15,8 @@ public class ConsoleLogCommand implements CommandExecutor {
         if(!(sender instanceof Player)){ sender.sendMessage(Main.PREFIX + "This command can only be executed by non Idiots!"); return false;}
         Player player = (Player) sender;
 
+        if(!(args == null)){ Bukkit.getConsoleSender().sendMessage(Main.PREFIX + args); }
+        else { sender.sendMessage("§4STOP"); }
 
         return false;
     }

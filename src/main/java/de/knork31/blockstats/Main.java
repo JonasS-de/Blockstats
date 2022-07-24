@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Main extends JavaPlugin {
 
     public static String PREFIX = "§bSAMM§0:§8 ";
+
     public void log (String text) {
         Bukkit.getConsoleSender().sendMessage(PREFIX + text);
     }
